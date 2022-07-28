@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+<script src="https://kit.fontawesome.com/85a15bfbee.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="header">
+        <img id="header-img" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png">
+        <nav id="nav-bar">
+          <ul class="nav-menu">
+            <li class="nav-item"><a href="#features" class="nav-link">Features</a></li>
+            <li class="nav-item"><a href="#how-is-works" class="nav-link">How It Works</a></li>
+            <li class="nav-item"><a href="#pricing" class="nav-link">Pricing</a></li>
+            <!-- <li><a href="#">Resources</a></li>
+            <li><button>Contact Us</button></li> -->
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+      </header>
+      
+      <div id="message">This website is made for bigger screen, you might face some issue.</div>
+      
+      <section id="banner">
+        <h2 id="banner-title">Handcrafted, home-made masterpieces</h2>
+        <form id="form" action="https://www.freecodecamp.com/email-submit" >
+        <input  id="email" type="email" placeholder="Enter your email address" name="email" required>
+        <input type="submit" id="submit" value="Get Started">
+        </form>
+      </section>
+      
+      <div id="main">
+        <section id="features">
+          <div class="features-box">
+            <div class="feature-icon">
+             <i class="fa-solid fa-fire"></i>
+            </div>
+            <div class="feature-desc">
+              <h2 class="feature-title">Premium Materials</h2>
+              <p class="feature-para">Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+            </div>
+          </div>
+          <div class="features-box">
+            <div class="feature-icon">
+              <i class="fa-solid fa-truck"></i>
+            </div>
+            <div class="feature-desc">
+              <h2 class="feature-title">Fast Shipping</h2>
+              <p class="feature-para">We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+            </div>
+          </div>
+          <div class="features-box">
+            <div class="feature-icon">
+              <i class="fa-solid fa-battery-full"></i>
+            </div>
+            <div class="feature-desc">
+              <h2 class="feature-title">Quality Assurance</h2>
+              <p class="feature-para">For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+            </div>
+          </div>
+        </section>
+        <section id="how-is-works">
+          <iframe id="video" src="https://www.youtube.com/embed/y8Yv4pnO7qc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+        <section id="pricing">
+          <div class="product-price" id="tenor">
+            <div class="level">TENOR TROMBONE</div>
+            <h2>$600</h2>
+            <ol>
+              <li>Lorem ipsum.</li>
+              <li>Lorem ipsum.</li>
+              <li>Lorem ipsum dolor.</li>
+              <li>Lorem ipsum.</li>
+            </ol>
+            <button class="btn">Select</button>
+          </div>
+          <div class="product-price" id="bass">
+            <div class="level">BASS TROMBONE</div>
+            <h2>$600</h2>
+            <ol>
+              <li>Lorem ipsum.</li>
+              <li>Lorem ipsum.</li>
+              <li>Lorem ipsum dolor.</li>
+              <li>Lorem ipsum.</li>
+            </ol>
+            <button class="btn">Select</button>
+          </div>
+          <div class="product-price" id="valve">
+            <div class="level">VALVE TROMBONE</div>
+            <h2>$600</h2>
+            <ol>
+              <li>Lorem ipsum.</li>
+              <li>Lorem ipsum.</li>
+              <li>Lorem ipsum dolor.</li>
+              <li>Lorem ipsum.</li>
+            </ol>
+            <button class="btn">Select</button>
+          </div>
+        </section>
+      </div>
+      
+      <footer>
+        <ul>
+          <li>Privacy</li>
+          <li>Terms</li>
+          <li>Contacts</li>
+        </ul>
+        <span>Copyright 2022, Original Trombones</span>
+      </footer>
+      
+      
+      <script>
+        const hamburger = document.querySelector(".hamburger")
+        const navMenu = document.querySelector(".nav-menu")
+
+        hamburger.addEventListener("click", ()=>{
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        })
+    </script>
+</body>
+</html>
